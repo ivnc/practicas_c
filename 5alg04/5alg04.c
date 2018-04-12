@@ -6,9 +6,9 @@ int main() {
 	float votos;
 	printf("Esta aplicación calcula el porcentaje de acuerdo en un referendum a partir de un número de votos totales y un número de votos afirmativos.\n");
 	printf("Introducir número de síes:\n");
-	scanf("%f", &si);
+	scanf("%i", &si);
 	printf("Ahora introducir el número total de votos:\n");
-	scanf("%f", &votos);
+	scanf("%i", &votos);
 	float porcentaje=si/votos*100;
-	printf("Su referendum obtuvo un %f\ de acuerdo", porcentaje);
+	printf("Su referendum obtuvo un %f%% de acuerdo", porcentaje);
 }
