@@ -3,7 +3,7 @@
 
 int main() {
 	float num;
-	printf("Esta aplicación recobe un número y devuelve si es mayor, igual o menor que 100\n");
+	printf("Esta aplicación recoge un número y devuelve si es mayor, igual o menor que 100\n");
 	printf("Introducir número a evaluar, separar decimales con punto\n");
 	scanf("%f", &num);
 	if(num<100) {
