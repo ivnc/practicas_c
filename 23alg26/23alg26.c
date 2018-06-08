@@ -1,28 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
 
 int main() {
-	int num;
-	int min=INT_MAX;
-	int max=0;
+	float num;
 	float sum=0;
-	float cant=0;
-	printf("Esta aplicación permite introducir tantos números enteros como se desee para calcular la media aritmética y el mayor y menor de la serie.\n");
-	printf("Introducir números enteros separados con enter. Finalizar con 0, que no se tendrá en cuenta:\n");
-	while(num!=0) {
-		scanf("%i", &num);
-		if(num!=0) {
-			sum=sum+num;
-			if(num<min) {
-				min=num;
-			}
-			if(num>max) {
-				max=num;
-			}
-			cant++;
-		}
+	printf("Esta aplicación recoge 8 números naturales y calcula su media aritmética.\n");
+	printf("Introducir números naturales separados con enter. Separar decimales con punto:\n");
+	for(float count=0; count<8; count++) {
+		scanf("%f", &num);
+		sum=sum+num;
 	}
-	float media=sum/cant;
-	printf("Media aritmética para los %.0f números introducidos (sumatorio: %.0f): %.2f. Máximo: %i, mínimo: %i", cant, sum, media, max, min);
+	float media=sum/8;
+	printf("Media aritmética para los 8 números introducidos (sumatorio: %.0f): %.2f.", sum, media);
 }
