@@ -2,18 +2,15 @@
 #include <stdio.h>
 
 int main() {
-	int num1=1;
+	int num1=0;
 	int num2=1;
-	int res;
+	int res=num2;
 	printf("Esta aplicación imprime la serie de Fibonacci hasta 10000\n");
-	printf("%i, %i, ", num1, num2);
 	while(res<10000) {
+		// Start printing in order to aboid showing numbers outside the range (1-10000)
+		printf("%i, ", res);
 		res=num1+num2;
-		if(res>10000) {
-			break;
-		}
 		num1=num2;
 		num2=res;
-		printf("%i, ", res);
 	}
 }
